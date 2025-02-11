@@ -1,0 +1,210 @@
+/* ========= Root=============*/
+:root {
+  /* Fonts */
+  --primary-font: 'Open Sans';
+  --secondary-font: 'Raleway';
+  /* Colors */
+  --main-txt-color: #555555;
+  --secondary-txt-color: #303030;
+
+  --light-txt-color: #ffffff;
+  --active-txt-color: #ff6c00;
+
+  --gray-color-60: rgba(157, 164, 189, 0.6);
+  --gray-color: rgba(157, 164, 189);
+
+  --main-bg-color: #111319;
+  --active-bg-color: #ff6c00;
+
+  --btn-border-color: #ff6c00;
+}
+/* ========= Reset base styles & base styles============= */
+body {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-color);
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn {
+  color: var(--secondary-txt-color);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid var(--btn-border-color);
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn-light {
+  color: var(--light-txt-color);
+}
+
+.uppertitle {
+  font-family: var(--primary-font);
+  color: var(--secondary-txt-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.uppertitle-light {
+  color: var(--gray-color-60);
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--secondary-txt-color);
+}
+
+.title-light {
+  color: var(--light-txt-color);
+}
+.btn:hover {
+  background-color: var(--active-bg-color);
+  color: var(--light-txt-color);
+}
+/* ============== HEADER =================== */
+.header {
+  background-color: var(--main-bg-color);
+}
+.header-logo {
+}
+.header-logo-img {
+}
+.header_nav {
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-nav-link,
+.header-contact {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--light-txt-color);
+}
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--active-txt-color);
+}
+
+/* ========= HERO SECTION============= */
+.hero {
+  background-color: var(--main-bg-color);
+}
+.section {
+}
+.hero-media {
+}
+.hero-media-item {
+}
+.hero-media-link {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: var(--secondary-txt-color);
+}
+.hero-media-link:hover {
+  color: var(--active-txt-color);
+}
+.hero-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05rem;
+  color: var(--light-txt-color);
+}
+.hero-desc {
+  color: var(--gray-color);
+}
+/* Slider section and buttons */
+.hero-slider {
+}
+.hero-slider-item {
+}
+.hero-slider-back {
+  color: var(--gray-color-60);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid var(--gray-color-60);
+  cursor: pointer;
+  text-align: left;
+  width: 60px;
+  padding: 0 0 8px 0;
+}
+.hero-slider-forward {
+  color: var(--gray-color-60);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid var(--gray-color-60);
+  cursor: pointer;
+  text-align: right;
+  width: 60px;
+  padding: 0 0 8px 0;
+}
+.hero-slider-back:hover,
+.hero-slider-forward:hover {
+  color: var(--light-txt-color);
+  border-color: var(--light-txt-color);
+}
+
+/*================ ABOUT SECTION ============ */
+.about {
+}
+.section {
+}
+.about-list {
+}
+.about-item {
+}
+.about-img {
+}
+.about-subtitle {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+.about-desc {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
