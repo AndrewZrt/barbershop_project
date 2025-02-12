@@ -4,8 +4,8 @@
   --primary-font: 'Open Sans';
   --secondary-font: 'Raleway';
   /* Colors */
-  --main-txt-color: #555555;
-  --secondary-txt-color: #303030;
+  --main-txt-color: rgba(85, 85, 85, 1);
+  --secondary-txt-color: rgba(48, 48, 48, 1);
 
   --light-txt-color: #ffffff;
   --active-txt-color: #ff6c00;
@@ -207,4 +207,134 @@ a {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
+}
+/*====================== PRICE SECTION ========================= */
+.price {
+  background-color: var(--main-bg-color);
+}
+.price-list {
+}
+.price-item {
+}
+.price-inner-list {
+}
+.price-inner-item {
+  color: var(--gray-color);
+}
+
+/*=================== BENEFITS SECTION ========================== */
+.benefits {
+}
+
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-quantity {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--secondary-txt-color);
+}
+.benefits-mark {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--active-txt-color);
+}
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--secondary-txt-color);
+}
+
+.benefits-desc {
+}
+/* ============ TEAM ============ */
+.team {
+}
+.team-list {
+}
+.team-item {
+}
+.item-img {
+}
+.item-title {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--secondary-txt-color);
+}
+.item-subtitle {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--active-txt-color);
+}
+/* ======= GALLERY ============= */
+.gallery {
+}
+.gallery-list {
+}
+.gallery-item {
+}
+.gallery-img {
+}
+
+/* ========= CONTACTS =========== */
+.contacts {
+  background-color: var(--main-bg-color);
+}
+.contacts-address {
+}
+.contacts-link {
+  color: var(--gray-color);
+}
+
+.contacts-schedule-desc {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--gray-color);
+}
+
+/* ============ FOOTER =================== */
+.footer {
+}
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--gray-color);
+}
+.footer-list {
+}
+.footer-item {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+.footer-item:hover,
+.footer-item:focus {
+  color: var(--active-txt-color);
 }
