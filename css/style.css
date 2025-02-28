@@ -1,8 +1,8 @@
 /* ========= Root=============*/
 :root {
   /* Fonts */
-  --primary-font: 'Open Sans';
-  --secondary-font: 'Raleway';
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   /* Colors */
   --main-txt-color: rgba(85, 85, 85, 1);
   --secondary-txt-color: rgba(48, 48, 48, 1);
@@ -17,8 +17,51 @@
   --active-bg-color: #ff6c00;
 
   --btn-border-color: #ff6c00;
+
+  /* Others */
+  --indent: 30px;
+  --items: 3;
 }
-/* ========= Reset base styles & base styles============= */
+/* ========= Reset global styles============= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  font-family: inherit;
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  padding: 0;
+
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  display: block;
+}
+address {
+  font-style: inherit;
+}
+/* ========= Base styles============= */
 body {
   font-family: var(--primary-font);
   font-size: 18px;
@@ -26,13 +69,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-txt-color);
 }
-ul,
-li {
-  list-style-type: none;
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  outline: 1px solid tomato;
+  margin: 0 auto;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+.section {
+  padding: 120px 0;
 }
 .btn {
   color: var(--secondary-txt-color);
@@ -43,13 +87,19 @@ a {
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
+  min-width: 158px;
+  min-height: 40px;
   background-color: transparent;
   border: 1px solid var(--btn-border-color);
-  padding: 12px 20px;
+  padding: 11px 19px;
   border-radius: 25px;
   cursor: pointer;
 }
 .btn-light {
+  color: var(--light-txt-color);
+}
+.btn:hover {
+  background-color: var(--active-bg-color);
   color: var(--light-txt-color);
 }
 
@@ -60,6 +110,7 @@ a {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .uppertitle-light {
   color: var(--gray-color-60);
@@ -72,31 +123,55 @@ a {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--secondary-txt-color);
+  margin-bottom: 20px;
 }
 
 .title-light {
   color: var(--light-txt-color);
+  margin-bottom: 44px;
 }
-.btn:hover {
-  background-color: var(--active-bg-color);
-  color: var(--light-txt-color);
+
+/* Card set */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 }
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 /* ============== HEADER =================== */
 .header {
   background-color: var(--main-bg-color);
+  padding: 22px 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
+  margin-right: 124px;
 }
 .header-logo-img {
 }
 .header_nav {
+  margin-right: auto;
 }
 .header-nav-list {
+  display: flex;
+  gap: 30px;
 }
 .header-nav-item {
 }
+.header-contact {
+  margin-right: 40px;
+}
 .header-nav-link,
 .header-contact {
+  display: block;
+  padding: 30px 0;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -113,8 +188,6 @@ a {
 /* ========= HERO SECTION============= */
 .hero {
   background-color: var(--main-bg-color);
-}
-.section {
 }
 .hero-media {
 }
@@ -186,20 +259,30 @@ a {
 /*================ ABOUT SECTION ============ */
 .about {
 }
-.section {
+.about-container {
+  display: flex;
+  gap: 30px;
 }
 .about-list {
+  display: flex;
+  gap: 30px;
 }
 .about-item {
 }
 .about-img {
 }
+.about-right-side {
+  width: 470px;
+}
+
 .about-subtitle {
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.66;
   letter-spacing: 0.02em;
+
+  margin-bottom: 20px;
 }
 .about-desc {
   font-family: var(--primary-font);
@@ -207,25 +290,38 @@ a {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
+  margin-bottom: 43px;
 }
 /*====================== PRICE SECTION ========================= */
 .price {
   background-color: var(--main-bg-color);
 }
 .price-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
 }
-.price-item {
-}
+
 .price-inner-list {
+  outline: 1px solid green;
+  padding: 30px 20px;
+  width: 570px;
 }
 .price-inner-item {
   color: var(--gray-color);
+}
+.price-inner-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.price-btn {
+  margin: 0 auto;
 }
 
 /*=================== BENEFITS SECTION ========================== */
 .benefits {
 }
-
+.benefits-container {
+}
 .benefits-list {
 }
 .benefits-item {
@@ -248,6 +344,9 @@ a {
   text-align: center;
   color: var(--active-txt-color);
 }
+.benefits-right-side {
+  width: 500px;
+}
 .benefits-text {
   font-weight: 600;
   font-size: 11px;
@@ -260,12 +359,17 @@ a {
 }
 /* ============ TEAM ============ */
 .team {
+  background-color: #f7f7f7;
 }
 .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 }
 .team-item {
 }
 .item-img {
+  margin-bottom: 30px;
 }
 .item-title {
   font-family: var(--primary-font);
@@ -273,8 +377,9 @@ a {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--secondary-txt-color);
+  text-align: center;
+  margin-bottom: 3px;
 }
 .item-subtitle {
   font-family: Open Sans;
@@ -282,24 +387,43 @@ a {
   font-size: 14px;
   line-height: 1.35;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--active-txt-color);
+  text-align: center;
 }
 /* ======= GALLERY ============= */
 .gallery {
 }
 .gallery-list {
+  padding-top: 24px;
+  --items: 4;
 }
 .gallery-item {
 }
 .gallery-img {
 }
 
-/* ========= CONTACTS =========== */
-.contacts {
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   background-color: var(--main-bg-color);
 }
+/* ======= BOOKING FORM ============= */
+
+.booking {
+  flex-basis: 570px;
+}
+
+/* ========= CONTACTS =========== */
+.contacts {
+  flex-basis: 570px;
+  outline: 1px solid turquoise;
+}
 .contacts-address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 72px;
 }
 .contacts-link {
   color: var(--gray-color);
